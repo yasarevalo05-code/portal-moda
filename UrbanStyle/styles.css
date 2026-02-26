@@ -437,6 +437,7 @@ html {
   flex-wrap: wrap;
   font-size: 13px;
   color: #ccc;
+  align-items: center;
 }
 
 .credit {
@@ -453,6 +454,20 @@ html {
   background: linear-gradient(90deg, transparent, var(--naranja), transparent);
   background-size: 200% 100%;
   animation: slide-line 5s linear infinite;
+}
+.social-icons{
+  display:flex;
+  gap:15px;
+  font-size:22px;
+}
+
+.social-icons a{
+  color:#fff;
+  transition:0.3s;
+}
+
+.social-icons a:hover{
+  color:#ff7a00; /* tu color de marca */
 }
 
 @keyframes slide-line {
@@ -1096,6 +1111,7 @@ html {
   gap: 40px;
   padding: 70px 180px;
   background: #0f0f0f;
+  margin-top: -65px;
   color: #fff;
 }
 
@@ -1241,7 +1257,7 @@ html {
 /* MOBILE 640px */
 @media (max-width: 640px) {
   .nov-layout { padding: 40px 20px; gap: 40px; }
-  .nov-titulares { height: 55vh; }
+  .nov-titulares { height: 65vh; }
   .titular-texto h2 { font-size: 22px; }
   .ultimas-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .mini-noticia img { height: 180px; }
